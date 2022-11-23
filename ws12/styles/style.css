@@ -1,0 +1,190 @@
+body { 
+	font-family: Arial, sans-serif;
+	width: 95%;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+.row {
+	background-color: green;
+
+}
+
+.container {
+	background-color: green;
+
+}
+
+.viivaH{ /*Header border*/
+	border-left: 5px solid;
+	border-right: 5px solid;
+	border-top: 10px solid;
+	border-color: white;
+		padding: 15px;
+		display: flex;
+		
+	
+	
+}
+.viivaN{ /*Nav border*/
+	border-left: 5px solid;
+	border-right: 5px solid;
+	border-bottom: 10px solid;
+	border-color: white;
+		padding: 10px;
+}
+.viiva1 { /*Footer border*/
+	border-left: 5px solid;
+	border-right: 5px solid;
+	border-top: 10px solid;
+	border-bottom: 10px solid;
+	border-color: white;
+	padding: 10px;
+}
+.viiva2 { /*Sisältö border*/
+	border-left: 5px solid;
+	border-right: 5px solid;
+	border-color: white;
+	
+}
+.keskiviiva {
+  column-count: 2;
+  column-gap: 40px;
+  column-rule-style: solid;
+ column-rule-width: 10px;
+ column-rule-color: white;
+
+ 	
+}
+
+
+.otsikko {
+	text-align: center;
+	display: flex;
+	font-size: 9vw;
+	font-weight: bold;
+
+}
+h6 {
+	text-align: center;
+}
+.div1 {
+	padding: 10px;
+	
+}
+.div2 {
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right:  10px;
+	padding-bottom:  10px;
+}
+
+.pallo {
+	
+	height: 12vw; 
+	width: 13vw;
+	text-align: left;
+	display: flex;
+}
+
+
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover  { /*aktiivinen linkki, ul> li > a,ul > li> a */
+	background-color: lime;
+	color: white;
+}
+	
+.nav-pills > .nav-item  > a:hover  { /*hiiri menee yli ul > li> a*/
+	background-color: lime;
+	color: white;
+}
+/*navin tekstiväri ul > li	
+.nav-pills >.nav-item  > a { 
+	color: white;
+}*/
+.nav > .nav-item > a{ /*footerin nav tekstiväri ul > li*/	
+	color: white;
+}
+
+.dropdown-menu, .dropdown-item { /*valikko avataan, valikon taustaväri ja tekstin väri ul, li*/
+	background-color: green;
+	color: white;
+
+}
+.dropdown-menu > .dropdown-item > .li, a:hover { 
+	background-color: lime !important; 
+    color: white !important;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+.row {
+    background-color: white;
+	color: black;
+}
+.container {
+    background-color: white;
+	color: black;
+}
+.viivaH{ /*Header border*/
+	border-left: 5px solid;
+	border-right: 5px solid;
+	border-top: 10px solid;
+	border-color:green;
+	
+	
+}
+.viivaN{ /*Nav border*/
+	border-left: 5px solid;
+	border-right: 5px solid;
+	border-bottom: 10px solid;
+	border-color: green;
+
+
+}
+.viiva1 { /*Footer border*/
+	border-left: 5px solid;
+	border-right: 5px solid;
+	border-top: 10px solid;
+	border-bottom: 10px solid;
+	border-color: green;
+}
+.viiva2 { /*Sisältö border*/
+	border-left: 5px solid;
+	border-right: 5px solid;
+	border-color: green;
+}
+.keskiviiva {
+  column-count: 2;
+  column-gap: 40px;
+  column-rule-style: solid;
+ column-rule-width: 10px;
+ column-rule-color: green;
+}
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover  { /*aktiivinen linkki, ul> li > a,ul > li> a */
+	background-color: lime;
+	color: green;
+}
+	
+.nav-pills > .nav-item  > a:hover  { /*hiiri menee yli ul > li> a*/
+	background-color: lime;
+	color: green;
+}
+/*navin tekstiväri ul > li	
+.nav-pills >.nav-item  > a { 
+	color: white;
+}*/
+.nav > .nav-item > a{ /*footerin nav tekstiväri ul > li*/	
+	color: green;
+}
+
+}
+
+
