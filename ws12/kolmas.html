@@ -95,11 +95,73 @@
 <div class="viiva2 col-xs-12 col-sm-8"> 
 <div class="keskiviiva">
 
-<h3 class="div2">sisältö, eka osa, </h3> 
+<h3 class="div2"> Yhteystiedot </h3> 
 
-<p class="div1">Tässä on vähemmän columneja(3kpl) kuin muilla sivuilla(4kpl), teksti on jaettu kahteen osaan column-countin avulla. Teksti rivittyy paremmin (ja itse), mutta pienellä ruudulla pysyvät vierekkäin, toisin kuin muilla sivuilla ne rivittyvät allekain.</p>
-<p class="div1">Varmastikin tuonkin saa korjattua jollain: tekstin jako katoaa määrätyssä koossa. Olisikohan media query oikea ratkaisu.</p>
-<p class="div1"> qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum[d] exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? [D]Quis autem vel eum i[r]ure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? [33] At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque</p>
+<p class="div1">
+Nimi<br>
+osoite<br>
+jotain<br>
+jotain<br>
+jotain<br>
+</p>
+
+
+
+<form class="div1" action="/action_page.php" target="_blank" >
+ <fieldset>
+<legend>Höntsäiletkö? </legend>
+</p>
+
+<input type="radio" id="kyllä" name="höntsäily" value="Todellakin!">
+<label for="kyllä"> Todellakin!</label><br>
+<input type="radio" id="En" name="höntsäily" value="En, olen vakava pelaaja.">
+<label for="En"> En, olen vakava pelaaja.</label><br>
+
+
+
+<select id="laji" name="laji" >
+<option value="valitse">Valitse laji</option>
+  <option value="tennis">Tennis</option>
+  <option value="padel">Padel</option>
+  <option value="jalkapallo">Jalkapallo</option>
+  <option value="sähly">Sähly</option>
+  <option value="toinen" >Joku muu</option>
+</select><br>
+
+<input type="text" id="muu" name="muu" placeholder="Joku muu, mikä"<br>
+<br><br>
+<button type="button" onclick="alert('Kiitos tiedosta!')">Kerro</button>
+</fieldset>
+</form>
+
+<br>
+
+<form class="div1" action="/action_page.php" target="_blank" autocomplete="on">
+ <fieldset>
+<legend>Ota yhteyttä </legend>
+
+<label for="etun"> Etunimi:</label><br>
+<input type="text" id="etun" name="etun"><br>
+<label for="sukun"> Sukunimi:</label><br>
+<input type="text" id="sukun" name="sukun"><br>
+
+<label for="email"> Sähköposti:</label><br>
+<input type="email" id="email" name="email"><br>
+<label for="kerro"> Kerro asiasi:</label><br>
+<textarea name="kerro" rows="8" cols="22">
+</textarea>
+<br>
+<br>
+<button type="button" onclick="alert('Kiitos yhteydenotostasi! Palaan asiaasi mahdollisimman pian.')">Lähetä</button>
+<input type="reset">
+</fieldset>
+</form>
+
+<br>
+
+
+
+ </div>
 
 </div>
 </div>
