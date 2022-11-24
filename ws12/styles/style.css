@@ -11,12 +11,12 @@ body {
 
 
 .row {
-	background-color: green;
+	background-color: #40A14C;
 
 }
 
 .container {
-	background-color: green;
+	background-color: #40A14C;
 
 }
 
@@ -68,10 +68,12 @@ body {
 	display: flex;
 	font-size: 9vw;
 	font-weight: bold;
+	color: #dfff4f;
 
 }
 h6 {
 	text-align: center;
+	color: #2F4726;
 }
 .div1 {
 	padding: 10px;
@@ -102,94 +104,115 @@ h6 {
 
 
 .nav-pills > .active > a, .nav-pills > .active > a:hover  { /*aktiivinen linkki, ul> li > a,ul > li> a */
-	background-color: lime;
-	color: white;
+	background-color: #dfff4f;
+	color: #2F4726;
 }
 	
 .nav-pills > .nav-item  > a:hover  { /*hiiri menee yli ul > li> a*/
-	background-color: lime;
-	color: white;
+	background-color: #dfff4f;
+	color: #2F4726;
 }
 /*navin tekstiväri ul > li	
 .nav-pills >.nav-item  > a { 
 	color: white;
 }*/
 .nav > .nav-item > a{ /*footerin nav tekstiväri ul > li*/	
-	color: white;
+	color: #2F4726;
 }
 
 .dropdown-menu, .dropdown-item { /*valikko avataan, valikon taustaväri ja tekstin väri ul, li*/
-	background-color: green;
-	color: white;
+	background-color: #40A14C;
+	color: #2F4726;
 
 }
 .dropdown-menu > .dropdown-item > .li, a:hover { 
-	background-color: lime !important; 
-    color: white !important;
+	background-color: #dfff4f !important; 
+    color: #2F4726 !important;
 }
 
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
+
+.otsikko {
+	text-align: center;
+	display: flex;
+	font-size: 9vw;
+	font-weight: bold;
+	color:#40A14C;
+}	
+
+	
 .row {
-    background-color: white;
-	color: black;
+	background-color: white;
+	
 }
 .container {
-    background-color: white;
-	color: black;
+	background-color: white;
+	
 }
 .viivaH{ /*Header border*/
-	border-left: 5px solid;
-	border-right: 5px solid;
-	border-top: 10px solid;
-	border-color:green;
-	
+	border-left: 10px solid;
+	border-right: 10px solid;
+	border-top: 0px solid;
+
+	border-color: #40A14C;
+
 	
 }
 .viivaN{ /*Nav border*/
-	border-left: 5px solid;
-	border-right: 5px solid;
-	border-bottom: 10px solid;
-	border-color: green;
-
+	border-left: 10px solid;
+	border-right: 10px solid;
+	border-bottom: 0px solid;
+	border-color: #40A14C;
 
 }
 .viiva1 { /*Footer border*/
-	border-left: 5px solid;
-	border-right: 5px solid;
-	border-top: 10px solid;
-	border-bottom: 10px solid;
-	border-color: green;
+	border-left: 10px solid;
+	border-right: 10px solid;
+	border-top: 0px solid;
+	border-bottom: 0px solid;
+	border-color: #40A14C;
 }
 .viiva2 { /*Sisältö border*/
-	border-left: 5px solid;
-	border-right: 5px solid;
-	border-color: green;
+	border-top: 0px solid;
+	border-left: 10px solid;
+	border-right: 10px solid;
+	border-color: #40A14C;
 }
+.oma {
+		border-bottom: 10px solid;
+		border-color: #40A14C;
+}
+.oma2 {
+	    
+		border-top: 10px solid;
+		border-color: #40A14C;
+}
+
 .keskiviiva {
-  column-count: 2;
-  column-gap: 40px;
-  column-rule-style: solid;
- column-rule-width: 10px;
- column-rule-color: green;
+  column-count: 1;
+
 }
 
 .nav-pills > .active > a, .nav-pills > .active > a:hover  { /*aktiivinen linkki, ul> li > a,ul > li> a */
-	background-color: lime;
-	color: green;
+	background-color: #dfff4f;
+	color: #40A14C;
 }
 	
 .nav-pills > .nav-item  > a:hover  { /*hiiri menee yli ul > li> a*/
-	background-color: lime;
-	color: green;
+	background-color: #dfff4f;
+	color:#2F4726;
 }
 /*navin tekstiväri ul > li	
 .nav-pills >.nav-item  > a { 
 	color: white;
 }*/
+
+
+
 .nav > .nav-item > a{ /*footerin nav tekstiväri ul > li*/	
-	color: green;
+	color: #40A14C;
 }
 
 }
