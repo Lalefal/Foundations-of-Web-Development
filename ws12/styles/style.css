@@ -9,6 +9,9 @@ body {
 
 }
 
+html {
+    scroll-padding-top: 70px;
+}
 
 .row {
 	background-color: #40A14C;
@@ -66,41 +69,107 @@ body {
 	border-color: white;
 	
 }
-.keskiviiva {
+.keskiviiva { /*kolmassivu column(border)*/
   column-count: 2;
   column-gap: 40px;
   column-rule-style: solid;
  column-rule-width: 10px;
  column-rule-color: white;
-
  	
 }
 
 
-.otsikko {
-	text-align: center;
+#otsikko { /*h1 header*/
+	
 	display: flex;
 	font-size: 9vw;
 	font-weight: bold;
 	color: #dfff4f;
-
 }
-h6 {
+#otsikko2 { /*h6 header*/
+	
 	text-align: center;
 	color: #2F4726;
 }
 
-.kuva1 {
+
+h3, h2, legend {
 	text-align: center;
-	padding-top: 80px;
-	
+	color: #2F4726;
+	font-weight: bold;
 }
-.kuva2 {
-		text-align: center;
-	padding-top: 20px;
+
+
+h6, h5, h4 {
+	color: #2F4726;
+}
+
+
+#pallo { /*header*/
+	
+	height: 13vw; 
+	width: 13vw;
+	text-align: left;
+	display: flex;
+}
+.pallo2 { /*yht.tiedot*/
+	
+	height: 2vw; 
+	height: 2vw; 
+	width: 2vw;
+	text-align: left;
 	
 }
 
+.kuva1 { /*kuva sivun yläreunassa*/
+	text-align: center;
+	padding-top: 80px;
+
+}
+.kuva2 { /*kuva tekstin seassa*/
+		text-align: center;
+	padding-top: 20px;
+
+	
+}
+.img1 { /*etusivu*/
+  width: 80%;
+  height: auto;
+}
+.img2 { /*tokasivu*/
+  width: 90%;
+  height: auto;
+}
+.img3 { /*etusivun pallot*/
+  width: 50%;
+  height: auto;
+}
+
+.col-centered{
+   float: none;
+   margin: 0 auto;
+}
+
+
+.carousel-caption {
+position: absolute;
+text-align:right;
+top: 60%;
+
+
+
+}
+
+.carousel-caption > h6 /* */ {
+ color: black;
+
+ }
+
+
+iframe {
+	  max-width: 90%;
+	
+}
 
 .div1 {
 	padding-top: 10px;
@@ -110,7 +179,7 @@ h6 {
 	
 }
 .div2 {
-	padding-top: 20px;
+	padding-top: 30px;
 	padding-left: 10px;
 	padding-right:  10px;
 	padding-bottom:  10px;
@@ -120,28 +189,56 @@ h6 {
 	padding-left: 10px;
 	padding-right:  10px;
 	padding-bottom:  10px;
+}
+
+.div4 {
+	
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right:  10px;
+	padding-bottom:  20px;	
+}
+.div5 {
+	padding-top: 10px;
+	padding-left: 0px;
+	padding-right:  0px;
+	padding-bottom:  0px;
 	
 }
-
-img {
-  width: 70%;
-  height: auto;
+small {
+	font-size: 10px;
 }
 
-form {
-  max-width: 100%;
+form { 
   height: auto;
   display: flex;
+  
+
 }
 
-.pallo {
-	
-	height: 12vw; 
-	width: 13vw;
-	text-align: left;
-	display: flex;
+input, textarea, select, button {
+  max-width: 100%;
+  border-radius: 4px;
+  resize: vertical;
+  cursor: pointer;
+  border: none;
 }
 
+label {
+	max-width: 80%;
+}
+option {
+	cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #dfff4f;
+}
+
+
+.button:hover {
+  background-color: #dfff4f;
+}
 
 
 .nav-pills > .active > a, .nav-pills > .active > a:hover  { /*aktiivinen linkki, ul> li > a,ul > li> a */
@@ -159,23 +256,35 @@ form {
 }*/
 .nav > .nav-item > a{ /*footerin nav tekstiväri ul > li*/	
 	color: #2F4726;
+	 border-radius: 4px;
 }
 
 .dropdown-menu, .dropdown-item { /*valikko avataan, valikon taustaväri ja tekstin väri ul, li*/
 	background-color: #40A14C;
 	color: #2F4726;
+	 border-radius: 4px;
 
 }
 .dropdown-menu > .dropdown-item > .li, a:hover { 
 	background-color: #dfff4f !important; 
     color: #2F4726 !important;
 }
+a {
+	color: #2F4726;
+}
 
+.n4 > .item > a:hover { 
+   background-color: #40A14C  !important;
+}
 
+.n4 > .item > a { 
+   color:#2F4726;
 
-@media only screen and (max-width: 576px) {
+}
 
-.otsikko {
+@media only screen and (max-width: 991px) {
+
+#otsikko {
 	text-align: center;
 	display: flex;
 	font-size: 9vw;
@@ -223,27 +332,33 @@ form {
 	border-bottom: 0px;
 	border-color: #40A14C;
 }
-.viivaVf{ /*footer reunat*/
+.viivaVf{ /*footer reunat #40A14C
 	border-left: 0px solid;
 	border-right: 0px solid;
-	border-top: 0px solid;
+	border-top: 0px solid; */
+	border-bottom: 0px;
 	
-	border-color: #40A14C;
+	
+	
 }
 
-.oma {
+.oma { /*footer ja header reunat*/
 		border-bottom: 10px solid;
 		border-color: #40A14C;
 }
-.oma2 {
+.oma2 { /*footer ja header reunat*/
 	    
 		border-top: 10px solid;
-		border-color: #40A14C;
+		border-color:#40A14C;
 }
 
 .keskiviiva {
   column-count: 1;
-
+  padding-left: 15%;
+  
+}
+.pienempi {
+	text-align:left;
 }
 
 .nav-pills > .active > a, .nav-pills > .active > a:hover  { /*aktiivinen linkki, ul> li > a,ul > li> a */
@@ -255,15 +370,15 @@ form {
 	background-color: #dfff4f;
 	color:#2F4726;
 }
-/*navin tekstiväri ul > li	
-.nav-pills >.nav-item  > a { 
-	color: white;
-}*/
 
 
 
 .nav > .nav-item > a{ /*footerin nav tekstiväri ul > li*/	
 	color: #40A14C;
+}
+
+.n4 > .item > a:hover { 
+   background-color: white  !important;
 }
 
 .kuva1 {
@@ -272,12 +387,42 @@ form {
 	
 }
 
+.img1 { /*etusivu*/
+  max-width: 40%;
+  height: auto;
+}
+.img2 { /*tokasivu*/
+  max-width: 60%;
+  height: auto;
+}
+
+.img3 { /*etusivun pallo*/
+  max-width: 30%;
+  height: auto;
+}
+
 .div3 {
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right:  10px;
 	padding-bottom:  10px;
 	
+}
+
+input, textarea, select, button {
+  max-width: 100%;
+  border-radius: 4px;
+  resize: vertical;
+  cursor: pointer;
+  border: 1px solid;
+  
+  
+}
+
+
+.pallo2 {
+	height: 4vw; 
+	width: 4vw;
 }
 
 }
