@@ -20,7 +20,7 @@ My starting point and interest was in the responsiviness: I wanted the page to l
 
  <a href="https://lalefal.github.io/r0244/ws12/" target="_blank"> Here it is. </a>
 
- <a class="nav-link" href="http://instagram.com/" target="_blank">
+ <a class="nav-link" href="http://instagram.com/" target="_blank"></a>
 <br>
 
 
