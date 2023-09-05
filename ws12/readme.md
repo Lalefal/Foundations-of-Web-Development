@@ -19,6 +19,8 @@ Consider
 My starting point and interest was in the responsiviness: I wanted the page to look like a tennis court on a big screen and to follow that theme on a smaller screen. 
 
  <a href="https://lalefal.github.io/r0244/ws12/" target="_blank"> Here it is. </a>
+
+ <a class="nav-link" href="http://instagram.com/" target="_blank">
 <br>
 
 
